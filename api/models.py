@@ -27,17 +27,17 @@ class KiharuBnd(models.Model):
 
 class KiharuHealthFacilitiesCleaned(models.Model):
     class Services(models.TextChoices):
-        PRIMARY_CARE = "PC", "Primary Care"
-        DENTAL = "DE", "Dental"
-        MATERNAL_HEALTH = "MH", "Maternal Health"
-        IMMUNIZATION = "I", "Immunization"
-        LABORATORY_SERVICES = "LS", "Laboratory Services"
+        PRIMARY_CARE = "Primary Care", "Primary Care"
+        DENTAL = "Dental", "Dental"
+        MATERNAL_HEALTH = "Maternal Health", "Maternal Health"
+        IMMUNIZATION = "Immunization", "Immunization"
+        LABORATORY_SERVICES = "Laboratory Services", "Laboratory Services"
 
     class Amenities(models.TextChoices):
-        PHARMACY = "P", "Pharmacy"
-        RESTROOM = "R", "Restroom"
-        WAITING_AREA = "WA", "Waiting Area"
-        PLAY_GROUND = "PG", "Play Ground"
+        PHARMACY = "Pharmacy", "Pharmacy"
+        RESTROOM = "Restroom", "Restroom"
+        WAITING_AREA = "Waiting Area", "Waiting Area"
+        PLAY_GROUND = "Play Ground", "Play Ground"
 
     no = models.IntegerField(blank=True, null=True)
     county = models.CharField(blank=True, null=True)
